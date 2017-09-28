@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffff"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:background="#ffff"
+        tools:context=".activityes.LoginActivity"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:src="@drawable/mainlogo" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password"
+            android:hint="E-mail"
+            style="@style/myEditText"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/myEditText"
+            android:hint="Şifre"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/btnGiris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            style="@style/buttons"
+            android:text="Giriş Yap" />
+    </LinearLayout>
+
+</ScrollView>
